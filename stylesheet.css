@@ -1,0 +1,57 @@
+
+@font-face { font-family: DS-DIGI; src: url('DS-DIGI.TTF'); }
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+:root {
+    --oscuro-4: #1e0721;
+    --oscuro-3: #23132d;
+    --oscuro-2: #26203a;
+    --oscuro-1: #30324d;
+
+    --claro-4: #444a65;
+    --claro-3: #5d687c;
+    --claro-2: #7c8893;
+    --claro-1: #9ba9ab;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--claro-4);
+    background-image: linear-gradient(var(--claro-4), var(--oscuro-4));
+}
+
+.clock {
+    width: 400px;
+    height: fit-content;
+    color: var(--claro-2);
+    font-size: 120px;
+    letter-spacing: 7px;
+    font-family: 'DS-digi';
+    background-color: black;
+    padding: 12px;
+    text-align: center;
+}
+
+.fondo {
+    width: 100vw;
+    height: 100vh;
+}
+
+.body-reloj {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+}
+
+.body-reloj-boton-container {
+    margin-top: 12px;
+}
+
+.body-reloj-boton-container-boton {
+    font-size: 50px;
+}
