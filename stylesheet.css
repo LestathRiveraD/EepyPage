@@ -1,9 +1,43 @@
 
-@font-face { font-family: DS-DIGI; src: url('DS-DIGI.TTF'); }
-
 .main-container {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container > div {
+    display: flex;
+}
+
+.container-top {
+    flex: 10;
+    height: 100vh;
+    justify-content: center;
+}
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--claro-1);
+    font-size: 50px;
+}
+
+.container-a {
+    flex: 40;
+    flex-direction: row;
+}
+
+.container-b {
+    flex: 40;
+    flex-direction: row;
+}
+
+.sub-container {
+    flex: 50;
+}
+
+.container-bottom {
+    flex: 10;
 }
 
 :root {
@@ -24,34 +58,13 @@ body {
     background-image: linear-gradient(var(--claro-4), var(--oscuro-4));
 }
 
-.clock {
-    width: 400px;
-    height: fit-content;
-    color: var(--claro-2);
-    font-size: 120px;
-    letter-spacing: 7px;
-    font-family: 'DS-digi';
-    background-color: black;
-    padding: 12px;
-    text-align: center;
-}
-
 .fondo {
     width: 100vw;
     height: 100vh;
 }
 
-.body-reloj {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: red;
+img {
+    height: 200px;
+    
 }
 
-.body-reloj-boton-container {
-    margin-top: 12px;
-}
-
-.body-reloj-boton-container-boton {
-    font-size: 50px;
-}
